@@ -3,6 +3,7 @@
 #include <time.h>
 /**
  * main - Entry
+ *
  * Return: Always 0
  */
 int main(void)
@@ -24,4 +25,5 @@ int main(void)
 	{
 		printf("Last digit of %d is %d and is 0\n", n, n % 10);
 	}
+
 	return (0);
