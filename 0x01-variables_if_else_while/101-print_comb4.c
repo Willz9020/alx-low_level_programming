@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - prints 3 combination of numbers
+ * main - Entry Point
  *
  * Return: Always
  */
@@ -25,7 +25,7 @@ int main(void)
 					if (c != '7')
 					{
 						putchar(',');
-						putchar('');
+						putchar(' ');
 					}
 				}
 			}
