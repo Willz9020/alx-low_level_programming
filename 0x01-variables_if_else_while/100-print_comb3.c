@@ -2,28 +2,31 @@
 #include <stdlib.h>
 #include <time.h>
 /**
- * main - Entry Point
+ * main - Entry point
  *
- * Return: Always 0
+ * Return: Always 0 sucess
  */
 int main(void)
 {
-	int digit1, digit2;
+	int c, i;
 
-	for (digit1 = 0; digit1 < 10; digit1++)
+	for (c = '0'; c <= '9'; c++)
 	{
-		for (digit2 = 0; digit2 < 10; digit2++)
+		for (i = '0'; i <= '9'; i++)
 		{
-			putchar((digit1 % 10) + '0');
-			putchar((digit2 % 10) + '0');
+			if (c < i)
+			{
+				putchar(c);
+				putchar(i);
 
-			if (digit1 == 9 && digit2 == 9)
-
-			putchar(',');
-			putchar(' ');
+				if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
 		}
 	}
-
 	putchar('\n');
 
 	return (0);
