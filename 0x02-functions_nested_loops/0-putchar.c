@@ -2,7 +2,7 @@
 /**
  * main - Entry point
  *
- * Return: Always 0 suscess 
+ * Return: Always 0
  */
 int main(void)
 {
@@ -15,5 +15,5 @@ int main(void)
 	}
 	_putchar('\n');
 
-	return (0)
+	return (0);
 }
